@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="vinay.css">
+<body>
+  <div class="container">
+    <h1>PassWord-Generator</h1>
+    <div class="display-container">
+      <input readonly placeholder="Password" class="display" data-passwordDisplay>
+      <button data-copy>
+        <span>data-copyMsg</span>
+      </button>
+    </div>
+    <div class="input-container">
+      <div class="length-container">
+        <p>Password-length</p>
+        <p class="data-lengthNumber"></P>
+      </div>
+      <input type="range" min="1" and max="20" class="slider" value="8" step="1" data-lengthSlider>
+      <div>
+        <input type="checkbox" id="upperbox" checked>
+        <label for="upperbox">Include upperclass letters</label>
+      </div>
+      <div>
+        <input type="checkbox" id="lowerbox">
+        <label for="lowerbox">Include lowerclass letters</label>
+      </div>
+      <div>
+        <input type="checkbox" id="number">
+        <label for="number">Include number</label>
+      </div>
+      <div>
+        <input type="checkbox" id="sn">
+        <label for="sn">Special-number</label>
+      </div>
+      <button class="generateButton">Generate Password</button>
+    </div>
+  </div>
+</body>
+<script src="vinay.js"></script>
+</html>
